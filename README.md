@@ -69,15 +69,21 @@ The chatbot understands the Sierra Madre environment as a **connected spatial gr
 
 ## 📊 Visualizations
 
-The project provides two ways to visualize the property graph:
+The project provides three ways to visualize the property graph:
 
-1.  **Global Knowledge Graph View**:
+1.  **Global Ontology (Schema) View**:
+    ```bash
+    python 08_ontology_visualize.py
+    ```
+    Generates a high-level schema diagram (`data/ontology_graph.png`) that explains how entity types (Building, Address, Place, Parcel, Division) relate to each other. This is the best starting point for understanding the data model.
+
+2.  **Connected Knowledge Graph View**:
     ```bash
     python 07_kg_visualize.py
     ```
-    Generates a static node-link diagram (`data/knowledge_graph.png`) showing the relationships between Buildings, Parcels, Addresses, and Places. This provides a "knowledge graph" perspective of how entities are connected.
+    Generates a static node-link diagram (`data/knowledge_graph.png`) showing real instances and their connections. This provides a "knowledge graph" perspective of how specific entities are connected in the Sierra Madre dataset.
 
-2.  **Interactive Geospatial Map**:
+3.  **Interactive Geospatial Map**:
     ```bash
     python 06_visualize.py
     ```
