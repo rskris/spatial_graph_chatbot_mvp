@@ -69,13 +69,19 @@ The chatbot understands the Sierra Madre environment as a **connected spatial gr
 
 ## 📊 Visualizations
 
-The project provides an **Interactive Geospatial Map** to explore the property graph:
+The project provides two ways to visualize the property graph:
 
-1.  Run the visualizer:
+1.  **Global Ontology (Schema) View**:
+    ```bash
+    python 08_ontology_visualize.py
+    ```
+    Generates a high-level schema diagram (`data/ontology_graph.png`) that explains how entity types (Building, Address, Place, Parcel, Division) relate to each other. This is the best starting point for understanding the data model.
+
+2.  **Interactive Geospatial Map**:
     ```bash
     python 06_visualize.py
     ```
-2.  Open the generated `data/property_graph_map.html` in your browser. Clicking on any feature reveals its property records and connected entities.
+    Generates an interactive HTML map (`data/property_graph_map.html`) where you can explore the graph spatially. Clicking on any feature reveals its property records and connected entities.
 
 ## Data Model
 
