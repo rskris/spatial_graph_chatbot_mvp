@@ -67,6 +67,22 @@ The chatbot understands the Sierra Madre environment as a **connected spatial gr
       python chatbot.py
       ```
 
+## 📊 Visualizations
+
+The project provides two ways to visualize the property graph:
+
+1.  **Global Knowledge Graph View**:
+    ```bash
+    python 07_kg_visualize.py
+    ```
+    Generates a static node-link diagram (`data/knowledge_graph.png`) showing the relationships between Buildings, Parcels, Addresses, and Places. This provides a "knowledge graph" perspective of how entities are connected.
+
+2.  **Interactive Geospatial Map**:
+    ```bash
+    python 06_visualize.py
+    ```
+    Generates an interactive HTML map (`data/property_graph_map.html`) where you can explore the graph spatially. Clicking on any feature reveals its property records and connected entities.
+
 ## Data Model
 
 -   **Nodes**: `Building`, `Address`, `Place`, `Division`, `Parcel`
